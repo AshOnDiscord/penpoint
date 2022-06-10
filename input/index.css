@@ -6,3 +6,21 @@ nav ul span::after {
   content: " / ";
   margin-right: 0.25rem;
 }
+
+@layer components {
+  .newsBlock {
+    @apply px-2;
+  }
+  .newsBlock h1 {
+    @apply font-serif text-xl font-semibold;
+  }
+  .newsBlock p {
+    @apply text-slate-700;
+  }
+  .newsBlock .newsAuthor {
+    @apply text-sm;
+  }
+  .newsBlock img {
+    @apply mb-2;
+  }
+}

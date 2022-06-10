@@ -34,32 +34,116 @@
         </button>
       </section>
     </nav>
-    <main class="flex items-center px-4 py-8 flex-col">
+    <main class="flex items-center px-8 py-8 flex-col">
       <h1 class="font-semibold text-2xl underline underline-offset-8 mb-4">
         Latest Releases
       </h1>
-      <section id="newArticles" class="flex">
-        <div id="newsCol-1" class="newsCol bg-slate-200"></div>
-        <div
-          id="newsCol-2"
-          class="newsCol px-2 border-x-2 border-solid border-slate-200"
-        >
-          <div class="newsBlock">
-            <a onclick="console.log('newspaper');">
+      <section id="newArticles" class="flex flex-col sm:flex-row">
+        <div id="newsCol-1" class="newsCol md:block hidden">
+          <div
+            class="newsBlock lg:border-b-2 pb-2 border-solid border-slate-100 w-[20vw]"
+          >
+            <a href="https://example.org">
+              <h1>Justice Stephen Breyer Retires</h1>
+              <p>
+                The oldest sitting member of the Supreme Court has just
+                announced his retirement. Justice Stephen Breyer has served 27
+                years as part of the Supreme Court.
+              </p>
+            </a>
+            <span class="newsAuthor">
+              By
+              <a href="https://example.com"> Vedh Vinayak </a>
+              and
+              <a href="https://example.com"> Tyler Suwankosai </a>
+              - 6/1/22
+            </span>
+          </div>
+          <div
+            class="newsBlock mt-2 hidden lg:block 2xl:border-b-2 pb-2 border-solid border-slate-100 w-[20vw]"
+          >
+            <a href="https://example.org">
+              <h1>Caring Kids Gift Drives</h1>
+              <p>
+                The Caring Kids Holiday Gift Drive was one of the many
+                fundraisers that Millburn Middle School is supporting.
+              </p>
+            </a>
+            <a href="https://example.com" class="newsAuthor">
+              By Aadit Shrivastava - 12/8/21
+            </a>
+          </div>
+          <div class="newsBlock pt-2 w-[20vw] 2xl:block hidden">
+            <a href="https://example.org">
               <img
-                src="./images/volleyball.webp"
-                alt=""
-                width="300"
-                class="mb-2"
+                src="./images/marvel.webp"
+                style="
+                  filter: grayscale(100%);
+                  width: 20vw;
+                  height: 5vw;
+                  object-fit: cover;
+                "
               />
-              <h1 class="font-serif text-lg font-semibold">
-                Student Faculty Volleyball
-              </h1>
+              <h1>Whys is Marvel Dying Off?</h1>
+              <p>
+                With the release of the new movie, Eternals, we see Marvel yet
+                again fail to deliver the masterpieces the franchise used to
+                create.
+              </p>
+            </a>
+            <a href="https://example.com" class="newsAuthor">
+              By Tyler Suwankosai - 12/8/21
             </a>
           </div>
         </div>
-        <div id="newsCol-3" class="newsCol bg-slate-200"></div>
-        <div id="newsCol-4" class="newsCol bg-slate-400"></div>
+        <div
+          id="newsCol-2"
+          class="newsCol pb-2 sm:pb-0 border-b-2 sm:border-b-0 md:border-l-2 sm:border-r-2 border-solid border-slate-100"
+        >
+          <div class="newsBlock">
+            <a href="https://example.org">
+              <img
+                src="./images/volleyball.webp"
+                style="filter: grayscale(100%)"
+              />
+              <h1>Student Faculty Volleyball</h1>
+              <p>
+                The Student Faculty Volleyball Tournament was an amazing event
+                where students had fun playing volleyball against their
+                teachers. This event was run by the SPORT Peer Leaders who
+                worked hard to organize this event together. The whole event was
+                to raise money for the Make-a-Wish foundation.
+              </p>
+            </a>
+            <a href="https://example.com" class="newsAuthor">
+              By Vedh Vinayak - 6/1/22
+            </a>
+          </div>
+        </div>
+        <div id="newsCol-3" class="newsCol">
+          <div class="newsBlock sm:w-[33vw]">
+            <a href="https://example.org">
+              <img
+                src="./images/flimFest-ai.webp"
+                style="filter: grayscale(100%)"
+              />
+              <h1>Submit films to the Millburn FilmFest!</h1>
+              <p>
+                The Student Faculty Volleyball Tournament was an amazing event
+                where students had fun playing volleyball against their
+                teachers. This event was run by the SPORT Peer Leaders who
+                worked hard to organize this event together.
+              </p>
+            </a>
+            <span class="newsAuthor">
+              By
+              <a href="https://example.com"> Ishaan Bharadwaj </a>
+              and
+              <a href="https://example.com"> Aadit Shrivastava </a>
+              - 2/9/22
+            </span>
+          </div>
+        </div>
       </section>
     </main>
     <script src="script.js"></script>
