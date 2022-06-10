@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output/index.css" />
+  </head>
+  <body>
+    <nav class="bg-slate-200 px-12 py-6 flex justify-between items-center">
+      <section class="navLeft text-2xl font-semibold">Penpoint</section>
+      <section class="navCenter">
+        <ul class="flex font-semibold text-sm">
+          <li>
+            <a href="https://example.com">Home</a>
+            <span></span>
+          </li>
+          <li>
+            <a href="https://example.com">About</a>
+          </li>
+        </ul>
+      </section>
+      <section class="navRight flex text-sm font-semibold">
+        <button
+          class="text-slate-900 py-1 px-4 hover:text-slate-700 active:text-slate-600 transition-all"
+        >
+          Login
+        </button>
+        <button
+          class="bg-slate-900 text-slate-200 hover:bg-slate-800 transition-all active:bg-slate-700 py-1 px-4"
+        >
+          Settings
+        </button>
+      </section>
+    </nav>
+    <main class="flex items-center px-4 py-8 flex-col">
+      <h1 class="font-semibold text-2xl underline underline-offset-8 mb-4">
+        Latest Releases
+      </h1>
+      <section id="newArticles" class="flex">
+        <div id="newsCol-1" class="newsCol bg-slate-200"></div>
+        <div
+          id="newsCol-2"
+          class="newsCol px-2 border-x-2 border-solid border-slate-200"
+        >
+          <div class="newsBlock">
+            <a onclick="console.log('newspaper');">
+              <img
+                src="./images/volleyball.webp"
+                alt=""
+                width="300"
+                class="mb-2"
+              />
+              <h1 class="font-serif text-lg font-semibold">
+                Student Faculty Volleyball
+              </h1>
+            </a>
+          </div>
+        </div>
+        <div id="newsCol-3" class="newsCol bg-slate-200"></div>
+        <div id="newsCol-4" class="newsCol bg-slate-400"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
