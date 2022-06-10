@@ -23,4 +23,40 @@ nav ul span::after {
   .newsBlock img {
     @apply mb-2;
   }
+  .release li {
+    @apply px-2 py-1 transition-all;
+  }
+  .release li:hover {
+    @apply bg-slate-200;
+  }
+  .release ul button {
+    @apply block w-full text-left;
+  }
+  .release h1 span {
+    @apply ml-2;
+  }
+}
+
+.release {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0), rgba(0, 0, 0));
+  background-position: bottom;
+  padding: 0 0.2rem 0.25rem;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+}
+
+.release span {
+  background-image: url("../images/icons/chevron-up.svg");
+  width: 1rem;
+  height: 1rem;
+  background-size: cover;
+  display: inline-block;
+}
+
+.releaseShow span {
+  background-image: url("../images/icons/chevron-down.svg");
+}
+
+.releaseShow {
+  background-size: 0 0;
 }

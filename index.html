@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./output/index.css" />
   </head>
   <body>
-    <nav class="bg-slate-200 px-12 py-6 flex justify-between items-center">
+    <nav class="bg-slate-100 px-12 py-6 flex justify-between items-center">
       <section class="navLeft text-2xl font-semibold">Penpoint</section>
       <section class="navCenter">
         <ul class="flex font-semibold text-sm">
@@ -35,11 +35,45 @@
       </section>
     </nav>
     <main class="flex items-center px-8 py-8 flex-col">
-      <h1 class="font-semibold text-2xl underline underline-offset-8 mb-4">
-        Latest Releases
-      </h1>
-      <section id="newArticles" class="flex flex-col sm:flex-row">
-        <div id="newsCol-1" class="newsCol md:block hidden">
+      <div class="release mb-4 absolute z-10">
+        <button>
+          <h1 class="font-semibold text-2xl">Latest Releases<span></span></h1>
+        </button>
+        <ul class="hidden">
+          <li>
+            <button class="latestReleases">Latest Releases</button>
+          </li>
+          <li>
+            <button class="schoolNews">Schools News</button>
+          </li>
+          <li>
+            <button class="aroundTheArea">Around the Area</button>
+          </li>
+          <li>
+            <button class="currentEvents">Current Events</button>
+          </li>
+          <li>
+            <button class="morningAnnouncements">Morning Announcements</button>
+          </li>
+          <li>
+            <button class="service">Service</button>
+          </li>
+          <li>
+            <button class="peerLeaderSpotlight">Peer Leader Spotlight</button>
+          </li>
+          <li>
+            <button class="gallery">Gallery</button>
+          </li>
+          <li>
+            <button class="foodArtsCulture">Food, Arts & Culture</button>
+          </li>
+          <li>
+            <button class="opinions">Opinions</button>
+          </li>
+        </ul>
+      </div>
+      <section id="newArticles" class="flex flex-col sm:flex-row mt-14">
+        <div id="newsCol-1" class="newsCol md:block">
           <div
             class="newsBlock lg:border-b-2 pb-2 border-solid border-slate-100 w-[20vw]"
           >
